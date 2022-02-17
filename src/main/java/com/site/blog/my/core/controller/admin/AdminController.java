@@ -41,12 +41,18 @@ public class AdminController {
 
     @GetMapping({"", "/", "/index", "/index.html"})
     public String index(HttpServletRequest request) {
+        Integer loginUserId = (int) request.getSession().getAttribute("loginUserId");
+        AdminUser adminUser = adminUserService.getUserDetailById(loginUserId);
+        if (adminUser == null) {
+            return "admin/login";
+        }
         request.setAttribute("path", "index");
         request.setAttribute("categoryCount", categoryService.getTotalCategories());
         request.setAttribute("blogCount", blogService.getTotalBlogs());
         request.setAttribute("linkCount", linkService.getTotalLinks());
         request.setAttribute("tagCount", tagService.getTotalTags());
         request.setAttribute("commentCount", commentService.getTotalComments());
+        request.setAttribute("userName", adminUser.getNickName());
         return "admin/index";
     }
 
