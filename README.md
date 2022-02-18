@@ -14,6 +14,8 @@
 
 2022-02-18 0%
 
+2022-02-19 更新验证码随机串生成方式从Random改为SecureRandom。改进建议来自：Abby。
+
 ![personal-blog](static-files/personal-blog.png)
 
 **坚持不易，各位朋友如果觉得项目还不错的话可以给项目一个 star 吧，也是对我一直更新代码的一种鼓励啦，谢谢各位的支持。**
