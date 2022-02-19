@@ -12,9 +12,25 @@
 
 ## 进度
 
-2022-02-18 0%
+### 2022-02-18 
 
-2022-02-19 更新验证码随机串生成方式从Random改为SecureRandom。改进建议来自：Abby。
+0%
+
+### 2022-02-19
+
+* 更新验证码随机串生成方式从Random改为SecureRandom。改进建议来自：Abby。
+
+* 引入ant design pro，并简单的修剪
+
+参考图：
+
+![image-20220219152453437](static-files/README/image-20220219152453437.png)
+
+
+
+
+
+------
 
 ![personal-blog](static-files/personal-blog.png)
 
