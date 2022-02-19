@@ -26,6 +26,10 @@
 
 ![image-20220219152453437](static-files/README/image-20220219152453437.png)
 
+* 修剪登录页面
+
+![image-20220220010513238](static-files/README/image-20220220010513238.png)
+
 
 
 
