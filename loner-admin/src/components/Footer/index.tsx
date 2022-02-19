@@ -6,7 +6,7 @@ export default () => {
   const intl = useIntl();
   const defaultMessage = intl.formatMessage({
     id: 'app.copyright.produced',
-    defaultMessage: '蚂蚁集团体验技术部出品',
+    defaultMessage: 'Smile-Bill',
   });
 
   const currentYear = new Date().getFullYear();
@@ -15,6 +15,12 @@ export default () => {
     <DefaultFooter
       copyright={`${currentYear} ${defaultMessage}`}
       links={[
+        {
+          key: "Loner-Blog",
+          title: "Loner-Blog",
+          href: "https://github.com/Smile-Bill/Loner_Blog",
+          blankTarget: true
+        },
         {
           key: 'Ant Design Pro',
           title: 'Ant Design Pro',
