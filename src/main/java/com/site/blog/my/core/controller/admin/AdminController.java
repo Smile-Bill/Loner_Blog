@@ -52,7 +52,6 @@ public class AdminController {
         request.setAttribute("linkCount", linkService.getTotalLinks());
         request.setAttribute("tagCount", tagService.getTotalTags());
         request.setAttribute("commentCount", commentService.getTotalComments());
-        request.setAttribute("userName", adminUser.getNickName());
         return "admin/index";
     }
 
